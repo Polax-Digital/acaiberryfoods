@@ -53,8 +53,12 @@
         width: 100%;
         min-height: 225px;
         overflow-x: scroll;
-        margin: 20px 0px 20px 0px;
+        margin: 20px 0px 10px 0px;
         white-space: nowrap;
+        scrollbar-width: none;
+    }
+    .carousel::-webkit-scrollbar {
+        display: none;
     }
     .item {
         display: inline-block;
@@ -94,9 +98,11 @@
     }
     #quote-p {
         text-align: center;
-        line-height: 1rem;
+        line-height: 1.3rem;
+        font-size: 1.4rem;
         margin: 0px;
-        width: 50%;
+        margin-left: 0.75rem;
+        width: 60%;
         padding-top: 20px;
     }
     .bold-block {
@@ -115,20 +121,19 @@
         position: relative;
         background-color: white;
         border-radius: 5px;
-        min-height: 400px;
+        min-height: 4  00px;
         margin-right: 1rem;
         padding: 0.5rem;
     }
     .product > div {
         white-space: normal;
-        position: absolute;
         font-family: NowAltRegular;
         text-align: center;
         width: 100%;
     }
     .product-img-container {
         text-align: center;
-        background-image: url('/images/home/berry-tub.png');
+        background-image: url('/images/home/berry-tub.png'); 
         background-repeat: no-repeat;
         background-size: contain;
         width: 90%;
@@ -137,14 +142,14 @@
     .multiplier-img {
         width: 20vw;
         position: absolute;
-        bottom: 70px;
+        bottom: 100px;
         left: 10px;
     }
     .multiplier-text {
         color: white;
         position: absolute;
-        bottom: 60px;
-        left: 30px;
+        bottom: 85px;
+        left: 27.5px;
         font-size: 2rem;
         font-family: NowAltBold;
     }
@@ -154,13 +159,76 @@
         background-color: rgba(60, 158, 54, 0.8);
         border: rgba(27, 111, 22, 0.8) 2px solid;
         border-radius: 30px;
-        padding: 1rem 0.75rem 1rem 0.75rem;
+        padding: 0.9rem 0.75rem 0.9rem 0.75rem;
         font-family: NowAltMedium;
         font-size: 0.75rem;
         transition: background-color 0.1s;
-        width: 60%;
+        width: 65%;
         display: inline-block;
         margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .content {
+        margin-left: 0.75rem;
+        font-family: NowAltRegular;
+    }
+    .content-p {
+        font-family: NowAltLight;
+        line-height: 1.5rem;
+    }
+    .c-white {
+        background-color: #fff;
+    }
+    #additives-header {
+        font-family: NowAltMedium;
+    }
+    .row {
+        margin: 0;
+    }
+    .text-center {
+        text-align: center;
+    }
+    .free-section {
+        margin-bottom: 5px;
+    }
+    .block-icon {
+        height: 32px;
+    }
+    #superfood-title {
+        font-family: 'Bodoni Moda', serif;
+        font-size: 1.8rem;
+        margin-top: 20px;
+        margin-left: 0.75rem;
+    }
+    #sup-p {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-family: NowAltLight;
+        line-height: 2.5rem;
+        text-align: center;
+        margin-top: -1rem;
+        font-size: 0.9rem;
+    }
+    .sup-item {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .sup-item > img {
+        width: 35%;
+    }
+    .sup-item > h4 {
+        font-family: NowAltBold;
+        font-size: 1.3rem;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .sup-item > p {
+        font-family: NowAltLight;
+        line-height: 2rem;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 </style>
 
@@ -236,17 +304,69 @@
             </div>
             <div class="product">
                 <div>
-                    <div>
-                        <p class="product-title">12 x Acai Berry tubs - 200ml</p>
-                        <p class="product-price">£47.88</p>
-                        <div class="product-img-container">
-                            <img src="/images/home/product-multiplier.png" alt="Multi" class="multiplier-img">
-                            <p class="multiplier-text">12x</p>
-                        </div>
-                        <a href="#" class="buy-pill">BUY NOW</a>
+                    <p class="product-title">12 x Acai Berry tubs - 200ml</p>
+                    <p class="product-price">£47.88</p>
+                    <div class="product-img-container">
+                        <img src="/images/home/product-multiplier.png" alt="Multi" class="multiplier-img">
+                        <p class="multiplier-text">12x</p>
+                    </div>
+                    <a href="#" class="buy-pill">BUY NOW</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h3 id="additives-header">NO ARTIFICIAL ADDITIVES</h3>
+                <p class="content-p">No Herbicides or Pesticides, No GMO, No Artificial Colors, Flavors, Preservatives or Sweeteners.</p>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="row text-center">
+                    <div class="col-6 col-md-4 free-section">
+                        <img src="/images/home/block.svg" alt="Red blocked icon" class="block-icon">
+                        <p>GLUTEN FREE</p>
+                    </div>
+                    <div class="col-6 col-md-4 free-section">
+                        <img src="/images/home/vegan-tick.svg" alt="Red blocked icon" class="block-icon">
+                        <p>VEGAN</p>
+                    </div>
+                    <div class="col-6 col-md-4 free-section">
+                        <img src="/images/home/block.svg" alt="Red blocked icon" class="block-icon">
+                        <p>NUT FREE</p>
+                    </div>
+                    <div class="col-6 col-md-4 free-section">
+                        <img src="/images/home/block.svg" alt="Red blocked icon" class="block-icon">
+                        <p>NO GMO</p>
+                    </div>
+                    <div class="col-6 col-md-4 free-section">
+                        <img src="/images/home/block.svg" alt="Red blocked icon" class="block-icon">
+                        <p>DAIRY FREE</p>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="c-white">
+        <div class="row">
+            <div class="col-12">
+                <h2 id="superfood-title">Açaí Berry is more than just a Superfood!</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12" id="sup-p">
+                <p>Acai berries are packed full of nutrients that have unmatched benefits for your overall health & wellbeing. One daily serving provides an excellent source for Vitamin A, Vitamin C  & Vitamin D</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="sup-item">
+                <img src="/images/home/increasedenergy.svg" alt="Increased Energy Purple Heart">
+                <h4>INCREASED ENERGY</h4>
+                <p>Contains antioxidants, monounsaturated fats , iron, calcium, fiber, vitamin A, & anthocyanins keep you full and energized  throughout the day</p>
+            </div>
+        </div>
+    </div>
+    <div class="midbanner">
+        
     </div>
 </div>
