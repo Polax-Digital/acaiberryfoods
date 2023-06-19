@@ -1,4 +1,6 @@
 <script>
+	import Ingredients from "../components/Ingredients.svelte";
+
 
 </script>
 
@@ -23,7 +25,7 @@
         padding: 1rem 0.75rem 1rem 0.75rem;
         font-family: NowAltMedium;
         font-size: 0.75rem;
-        transition: background-color 0.1s;
+        transition: background-color 0.1s ease-in-out;
     }
     #hero-button:hover, #hero-button:focus, #hero-button:focus-within {
         background-color: rgba(48, 126, 43, 0.8);
@@ -250,7 +252,7 @@
         padding: 0.5rem 0.75rem;
         font-family: NowAltMedium;
         font-size: 0.75rem;
-        transition: background-color 0.1s;
+        transition: background-color 0.1s ease-in-out;
     }
     #banner-button:hover, #banner-button:focus, #banner-button:focus-within {
         background-color: rgba(48, 126, 43, 0.8);
@@ -434,3 +436,4 @@
         </div>
     </div>
 </div>
+<Ingredients></Ingredients>
