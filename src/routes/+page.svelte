@@ -195,7 +195,7 @@
     .block-icon {
         height: 32px;
     }
-    #superfood-title {
+    .superfood-title {
         font-family: 'Bodoni Moda', serif;
         font-size: 1.8rem;
         margin-top: 20px;
@@ -229,6 +229,48 @@
         line-height: 2rem;
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+    .mid-banner {
+        background-image: url('/images/home/mid-banner.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 125px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #banner-button {
+        text-decoration: none;
+        color: white;
+        background-color: rgba(60, 158, 54, 0.8);
+        border: rgba(27, 111, 22, 0.8) 3px solid;
+        border-radius: 25px;
+        padding: 0.5rem 0.75rem;
+        font-family: NowAltMedium;
+        font-size: 0.75rem;
+        transition: background-color 0.1s;
+    }
+    #banner-button:hover, #banner-button:focus, #banner-button:focus-within {
+        background-color: rgba(48, 126, 43, 0.8);
+    }
+    .customers {
+        margin-top: 10px;
+    }
+    .star {
+        width: 30px;
+        padding: 0px;
+        margin-left: 2.5px;
+        margin-right: 2.5px;
+    }
+    .star-row {
+        display: flex;
+        justify-content: center;
+    }
+    .review-col {
+        font-family: NowAltLight;
+        line-height: 2rem;
     }
 </style>
 
@@ -350,7 +392,7 @@
     <div class="c-white">
         <div class="row">
             <div class="col-12">
-                <h2 id="superfood-title">Açaí Berry is more than just a Superfood!</h2>
+                <h2 class="superfood-title">Açaí Berry is more than just a Superfood!</h2>
             </div>
         </div>
         <div class="row">
@@ -365,8 +407,30 @@
                 <p>Contains antioxidants, monounsaturated fats , iron, calcium, fiber, vitamin A, & anthocyanins keep you full and energized  throughout the day</p>
             </div>
         </div>
-    </div>
-    <div class="midbanner">
-        
+        <div class="mid-banner">
+            <a href="/shop" id="banner-button">
+                Get Your ACAI
+            </a>
+        </div>
+        <div class="customers">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="superfood-title">5 Stars from over 16,000 Customers</h2>
+                </div>
+            </div>
+            <div class="row star-row">
+                <img src="/images/home/star.svg" alt="" class="star">
+                <img src="/images/home/star.svg" alt="" class="star">
+                <img src="/images/home/star.svg" alt="" class="star">
+                <img src="/images/home/star.svg" alt="" class="star">
+                <img src="/images/home/star.svg" alt="" class="star">
+            </div>
+            <div class="row">
+                <div class="col-12 review-col text-center">
+                    <p>“Tasty organic coffee flavour and great atmosphere. Amazing staff, however the place is small and pretty pricy for a bowl however the best yet acai bowl I tried.”</p>
+                    <p>-Richard Barrett</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
