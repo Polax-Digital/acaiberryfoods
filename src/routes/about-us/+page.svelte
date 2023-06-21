@@ -126,19 +126,19 @@
         position: absolute;
         top: 0; left: 0;
         width: 100%; height: 100%;
-        background-image: url("images/about-us/fairtrade.png");
+        background-image: url("/images/about-us/fairtrade.png");
         background-size: cover;
         background-position: center;
         filter: brightness(50%);
     }
     .social::before {
-        background-image: url("images/about-us/social.png");
+        background-image: url("/images/about-us/social.png");
     }
     .development::before {
-        background-image: url("images/about-us/development.png");
+        background-image: url("/images/about-us/development.png");
     }
     .environment::before {
-        background-image: url("images/about-us/environment.png");
+        background-image: url("/images/about-us/environment.png");
     }
 
     /* Media Queries */
