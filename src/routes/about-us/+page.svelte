@@ -66,7 +66,7 @@
         left: -85px;
     }
     .circle.inverse {
-        left: 657px
+        left: 101%;
     }
     #about, #acai {
         padding-top: 100px
@@ -117,7 +117,6 @@
     }
     .fairtrade, .social, .development, .environment {
         position: relative;
-        max-height: 255px;
     }
     .fairtrade *, .social *, .development *, .environment * {
         position: relative;
@@ -129,6 +128,7 @@
         width: 100%; height: 100%;
         background-image: url("images/about-us/fairtrade.png");
         background-size: cover;
+        background-position: center;
         filter: brightness(50%);
     }
     .social::before {
@@ -139,6 +139,63 @@
     }
     .environment::before {
         background-image: url("images/about-us/environment.png");
+    }
+
+    /* Media Queries */
+    @media screen and (max-width: 768px) {
+        .container {
+            width: 80vw;
+        }
+        #img-col-about img, #img-col-acai img {
+            width: 100%;
+        }
+    }
+    @media screen and (max-width: 430px) {
+        .header {
+            height: 35vh;
+        }
+        .header-content {
+            top: 5rem;
+            padding: 1rem;
+        }
+        .header-content p {
+            font-size: 11px;
+            line-height: 15px;
+        }
+        .header-content small {
+            font-size: 13px;
+        }
+        #about {
+            padding-top: 0;
+        }
+        #acai {
+            padding-top: 30px;
+        }
+        .page-content h1 {
+            font-size: 20px;
+        }
+        .page-content p {
+            font-size: 12px;
+            line-height: 30px;
+        }
+        .container {
+            margin-bottom: 0;
+        }
+        .box h1 {
+            padding: 0 1rem;
+        }
+        .box p {
+            padding: 0 1rem;
+        }
+        .fsde-container h3 {
+            font-size: 20px;
+            letter-spacing: 1.5px;
+        }
+        .fsde-container p {
+            font-size: 12px;
+            line-height: 15px;
+            max-width: 80%;
+        }
     }
 </style>
 
