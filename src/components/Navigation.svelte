@@ -3,6 +3,8 @@
 
     console.log($page.url.pathname)
 
+    
+
 </script>
 
 <style>
