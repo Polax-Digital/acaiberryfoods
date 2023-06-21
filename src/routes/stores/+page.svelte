@@ -8,7 +8,7 @@
         color: #fff;
         text-align: center;
         padding: 5rem;
-        background-image: url("images/stores/header.png");
+        background-image: url("/images/stores/header.png");
         background-size: cover;
         background-position: center;
     }
@@ -109,7 +109,7 @@
 <div class="page-content">
     <div class="row">
         <div class="col-md-4">
-            <img src="images/stores/boxpark.png" alt="BOXPARK Shoreditch Store">
+            <img src="/images/stores/boxpark.png" alt="BOXPARK Shoreditch Store">
             <h2>Boxpark Shoreditch</h2>
             <p>Box 32,</p>
             <p>2-10 Bethnal Green Road,</p>
@@ -119,7 +119,7 @@
             <button class="hours-btn" on:click={() => (showModal = true)}>Opening Hours</button>
         </div>
         <div class="col-md-4">
-            <img src="images/stores/carnaby.png" alt="Carnaby Street Store">
+            <img src="/images/stores/carnaby.png" alt="Carnaby Street Store">
             <h2>Carnaby Street</h2>
             <p>G11 Kingly Court,</p>
             <p>Kingly Street,</p>
@@ -129,7 +129,7 @@
             <button class="hours-btn" on:click={() => (showModal = true)}>Opening Hours</button>
         </div>
         <div class="col-md-4">
-            <img src="images/stores/chelsea.png" alt="Chelsea Store">
+            <img src="/images/stores/chelsea.png" alt="Chelsea Store">
             <h2>Chelsea</h2>
             <p>247</p>
             <p>King's Road,</p>
@@ -141,7 +141,7 @@
     </div>
     <div class="row">
         <div class="col-md-4">
-            <img src="images/stores/euston.png" alt="Euston Road Store">
+            <img src="/images/stores/euston.png" alt="Euston Road Store">
             <h2>Euston Road</h2>
             <p>Unit 4,</p>
             <p>338 Euston Road,</p>
@@ -151,7 +151,7 @@
             <button class="hours-btn" on:click={() => (showModal = true)}>Opening Hours</button>
         </div>
         <div class="col-md-4">
-            <img src="images/stores/wardour.png" alt="Wardour Street Store">
+            <img src="/images/stores/wardour.png" alt="Wardour Street Store">
             <h2>Wardour Street</h2>
             <p>130</p>
             <p>Wardour Street,</p>
@@ -161,7 +161,7 @@
             <button class="hours-btn" on:click={() => (showModal = true)}>Opening Hours</button>
         </div>
         <div class="col-md-4">
-            <img src="images/stores/nottinghill.png" alt="Notting Hill Store">
+            <img src="/images/stores/nottinghill.png" alt="Notting Hill Store">
             <h2 id="rennovation">Notting Hill</h2>
             <small>*Under Rennovation</small>
             <p>196 Kensington Park Road</p>
