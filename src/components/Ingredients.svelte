@@ -3,9 +3,16 @@
 	 * @type {any}
 	 */
     let screenSize;
+
+    import { page } from '$app/stores';
+
+    let isAbout = ($page.url.pathname == "/about-us");
 </script>
 
 <style>
+    .as {
+        height: 200px !important;
+    }
     .bod-f {
         font-family: 'Bodoni Moda', serif;
     }
@@ -195,28 +202,30 @@
     }
 </style>
 <svelte:window bind:innerWidth={screenSize} />
-<div class="ing-container">
-    <div class="img-container">
-        <div class="row">
-            <div class="col-12 col-md-6 bod-f">
-                <p class="img-p">
-                    Acai Berries are packed full of nutrients,
-                    delivering unmatched benefits for your
-                    overall health and wellbeing.
-                </p>
-            </div>
-            <div class="col-12 col-md-6 bod-f">
-                <div class="quality-con">
-                    <img src="/images/ingredients/tick.svg" alt="" class="tick">
-                    <h4>QUALITY INGREDIENTS</h4>
+<div class="ing-container {isAbout ? 'as':''}">
+    {#if $page.url.pathname != "/about-us"}
+        <div class="img-container">
+            <div class="row">
+                <div class="col-12 col-md-6 bod-f">
+                    <p class="img-p">
+                        Acai Berries are packed full of nutrients,
+                        delivering unmatched benefits for your
+                        overall health and wellbeing.
+                    </p>
                 </div>
-                <p class="qual-p">
-                    We only use 100% fresh Acai Berries in every tub with no nasty ingredients. Straight from the Amazon Rainforest to your bowl!
-                </p>
-                <a href="#" class="nutrition-pill">Full Nutrition Values</a>
+                <div class="col-12 col-md-6 bod-f">
+                    <div class="quality-con">
+                        <img src="/images/ingredients/tick.svg" alt="" class="tick">
+                        <h4>QUALITY INGREDIENTS</h4>
+                    </div>
+                    <p class="qual-p">
+                        We only use 100% fresh Acai Berries in every tub with no nasty ingredients. Straight from the Amazon Rainforest to your bowl!
+                    </p>
+                    <a href="#" class="nutrition-pill">Full Nutrition Values</a>
+                </div>
             </div>
         </div>
-    </div>
+    {/if}
     <div class="ig-container">
         {#if screenSize > 767}
         <div class="row mid-set">

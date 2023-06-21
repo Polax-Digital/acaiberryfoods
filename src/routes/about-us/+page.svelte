@@ -1,3 +1,7 @@
+<script>
+    import Ingredients from "../../components/Ingredients.svelte";
+    import People from "../../components/People.svelte";
+</script>
 <style>
     .header {
         min-width: 100vw;
@@ -257,3 +261,6 @@
         <p>Our production is totally sustainable, where natural resources involved cultivation our berries fully respected.</p>
     </div>
 </div>
+
+<Ingredients />
+<People />
