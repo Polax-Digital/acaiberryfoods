@@ -9,6 +9,9 @@
     .bod-f {
         font-family: 'Bodoni Moda', serif;
     }
+    .img-p {
+        color: white;
+    }
     .quality-con {
         display: flex;
         align-items: center;
@@ -57,15 +60,17 @@
     .img-container > .row {
         margin: 0px;
     }
+    .img-container {
+        background:linear-gradient( rgba(80, 37, 61, 0.7) 100%, rgba(80, 37, 61, 0.7)100%),url('/images/ingredients/ing-bg-mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     @media only screen and (max-width: 767px) {
         .ing-container {
             height: 520px;
         }
         .img-container {
             height: 320px;
-            background:linear-gradient( rgba(80, 37, 61, 0.7) 100%, rgba(80, 37, 61, 0.7)100%),url('/images/ingredients/ing-bg-mobile.png');
-            background-repeat: no-repeat;
-            background-size: cover;
         }
         .ig-container {
             height: 200px;
@@ -73,7 +78,6 @@
         .img-p {
             padding-left: 22px;
             padding-right: 22px;
-            color: white;
             font-size: 1rem;
             margin-top: 20px;
         }
@@ -87,7 +91,7 @@
             padding-left: 30px;
             padding-right: 30px;
         }
-        .ig-con > span {
+        .ig-con > p {
             font-family: NowAltLight;
             font-size: 15px;
         }
@@ -109,6 +113,84 @@
             font-family: 'Bodoni Moda', serif;
             font-size: 25px;
             margin-left: 35px;
+        }
+    }
+    @media only screen and (min-width: 768px) {
+        .ing-container {
+            height: 520px;
+        }
+        .img-container {
+            height: 320px;
+        }
+        .ig-container {
+            height: 200px;
+        }
+        .img-p {
+            padding-left: 22px;
+            padding-right: 22px;
+            font-size: 1.5rem;
+            margin-top: 100px;
+            line-height: 2rem;
+        }
+        .quality-con {
+            margin-top: 70px;
+        }
+        .nutrition-pill {
+            margin-left: 5px;
+            width: 200px;
+            display: block;
+            text-align: center;
+        }
+        .ig-con > p {
+            font-family: NowAltLight;
+            font-size: 15px;
+            margin-bottom: 0px;
+        }
+        .ig-con > img {
+            height: 70px;
+        }
+        .ig-con {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            max-width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .js {
+            display: flex;
+            justify-items: center;
+            flex-direction: column;
+            margin-top: 25px;
+        }
+        .join {
+            font-family: NowAltLight;
+            font-size: 18px;
+            margin-top: 25px;
+            margin-left: 35px;
+        }
+        .hashtag {
+            font-family: 'Bodoni Moda', serif;
+            font-size: 32px;
+            margin-left: 35px;
+        }
+        .mid-set {
+            padding-top: 20px;
+        }
+        .bod-f {
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    @media only screen and (min-width: 992px) {
+        .js {
+            padding-left: 50px;
+        }
+    }
+    @media only screen and (min-width: 1200px) {
+        .js {
+            padding-left: 150px;
         }
     }
 </style>
@@ -137,7 +219,7 @@
     </div>
     <div class="ig-container">
         {#if screenSize > 767}
-        <div class="row">
+        <div class="row mid-set">
             <div class="col-12 col-md-6 js">
                 <span class="join">JOIN US</span>
                 <span class="hashtag">#ACAIBERRYFOODS</span>
@@ -145,7 +227,7 @@
             <div class="col-12 col-md-6">
                 <div class="ig-con">
                     <img src="/images/ingredients/ig.svg" alt="" class="ig-logo">
-                    <span>@acaiberryfoods</span>
+                    <p>@acaiberryfoods</p>
                 </div>
             </div>
         </div>
@@ -154,7 +236,7 @@
             <div class="col-12 col-md-6">
                 <div class="ig-con">
                     <img src="/images/ingredients/ig.svg" alt="" class="ig-logo">
-                    <span>@acaiberryfoods</span>
+                    <p>@acaiberryfoods</p>
                 </div>
             </div>
             <div class="col-12 col-md-6 js">

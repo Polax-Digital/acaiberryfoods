@@ -1,6 +1,6 @@
 <script>
 	import Ingredients from "../components/Ingredients.svelte";
-
+    import People from "../components/People.svelte";
 
 </script>
 
@@ -437,3 +437,4 @@
     </div>
 </div>
 <Ingredients></Ingredients>
+<People></People>
