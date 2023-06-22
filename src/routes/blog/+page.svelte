@@ -65,11 +65,38 @@
     .row {
         margin-bottom: 5rem;
     }
+    /* Media Queries */
+    @media screen and (max-width: 768px) {
+        .container {
+            width: 80vw;
+        }
+        .img-col-left img, .img-col-right img {
+            width: 100%;
+        }
+    }
+    @media screen and (max-width: 430px) {
+        .left, .right {
+            padding-top: 30px;
+        }
+        .page-content h2 {
+            font-size: 20px;
+        }
+        .page-content p {
+            font-size: 12px;
+            line-height: 30px;
+        }
+        .container {
+            margin-bottom: 0;
+        }
+    }
 </style>
 
 <div class="page-content">
     <div class="row">
-        <div class="col-lg-6 left">
+        <div class="col-lg-6 img-col-left order-lg-last">
+            <img src="/images/blog/post-1.png" alt="All About Acai">
+        </div>
+        <div class="col-lg-6 left order-lg-first">
             <div class="container">
                 <div class="circle">
               
@@ -80,12 +107,9 @@
             <p>In this blog, we’ll give you the low down on nature’s ‘purple gold’, and some uses of acai fruit that can transform your health and wellbeing.</p>
             <button class="readmore">Read More</button>
         </div>
-        <div class="col-lg-6 img-col-left">
-            <img src="/images/blog/post-1.png" alt="All About Acai">
-        </div>
     </div>
     <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-6 img-col-right">
             <img src="/images/blog/post-2.png" alt="Acai More Than Just a Superfood">
         </div>
         <div class="col-lg-6 right">
@@ -100,7 +124,10 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-6 left">
+        <div class="col-lg-6 img-col-left order-lg-last">
+            <img src="/images/blog/post-3.png" alt="Reasons Why Acai Is a Superfood">
+        </div>
+        <div class="col-lg-6 left order-lg-first">
             <div class="container">
                 <div class="circle">
               
@@ -111,12 +138,9 @@
             <p>In this blog, we’re going to explore the reasons why acai is a superfood, and you may be surprised at some of the health benefits! Let's take a closer look at this amazing fruit and find out what all the fuss is about:</p>
             <button class="readmore">Read More</button>
         </div>
-        <div class="col-lg-6 img-col-left">
-            <img src="/images/blog/post-3.png" alt="Reasons Why Acai Is a Superfood">
-        </div>
     </div>
     <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-6 img-col-right">
             <img src="/images/blog/post-4.png" alt="Ways you can includ acai into your daily routine">
         </div>
         <div class="col-lg-6 right">
@@ -132,7 +156,10 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-6 left">
+        <div class="col-lg-6 img-col-left order-lg-last">
+            <img src="/images/blog/post-5.png" alt="Miracle Berry for Fitness Enthusiast?">
+        </div>
+        <div class="col-lg-6 left order-lg-first">
             <div class="container">
                 <div class="circle">
               
@@ -141,9 +168,6 @@
             <h2>MIRACLE BERRY FOR FITNESS ENTHUSIAST?</h2>
             <p>We’ve all been there. You’re four weeks into your New Year’s resolution of hitting the gym five times a week and you’re already starting to feel the effects of working out that much. You’re sore, you’re tired, and you just don’t have the energy to keep going. But you don’t want to give up on your resolution so soon! What can you do to give yourself a boost?</p>
             <button class="readmore">Read More</button>
-        </div>
-        <div class="col-lg-6 img-col-left">
-            <img src="/images/blog/post-5.png" alt="Miracle Berry for Fitness Enthusiast?">
         </div>
     </div>
 </div>
