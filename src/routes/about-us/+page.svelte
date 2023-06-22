@@ -211,7 +211,10 @@
 </div>
 <div class="page-content">
     <div class="row">
-        <div class="col-lg-6" id="about">
+        <div class="col-lg-6 order-lg-last" id="img-col-about">
+            <img src="/images/about-us/shop.png" alt="Acai Berry Shop">
+        </div>
+        <div class="col-lg-6 order-lg-first" id="about">
             <div class="container">
                 <div class="circle">
               
@@ -219,9 +222,6 @@
               </div>
             <h2>About Us</h2>
             <p>Founded in 2017 Acai Berry Foods was created with the belief that everybody should be able to eat, enjoy, and benefit from this incredible superfood berry exactly as if they were in the heart of the Amazon Rainforest. We now deliver the freshest and more concentrated Acai product on the market, available to buy as a ready-made bowl from our 7 cafes around London or delivered straight to your door to create your own bowls at home.</p>
-        </div>
-        <div class="col-lg-6" id="img-col-about">
-            <img src="/images/about-us/shop.png" alt="Acai Berry Shop">
         </div>
     </div>
     <div class="box">
