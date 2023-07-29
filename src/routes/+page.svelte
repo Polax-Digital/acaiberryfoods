@@ -274,6 +274,61 @@
         font-family: NowAltLight;
         line-height: 2rem;
     }
+
+    /* Media Queries */
+    @media screen and (min-width: 768px) {
+        .hero {
+            min-height: 80vh;
+        }
+        #hero-button {
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: -0.375px;
+            padding: 1.8rem 1rem;
+        }
+        #benefits-title {
+            text-align: center;
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: -0.75px;
+        }
+        .item {
+            width: 25%;
+        }
+        .item.first {
+            margin-left: 4rem;
+        }
+        .quote, .content {
+            width: 90%;
+            margin: 0 auto;
+        }
+        #quote-exp {
+            text-align: center;
+        }
+        .sup-txt {
+            width: 60%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .superfood-title {
+            font-size: 45px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 43px; /* 95.556% */
+            letter-spacing: -0.675px;
+        }
+        #sup-p {
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px; /* 200% */
+            letter-spacing: -0.225px;
+        }
+    }
 </style>
 
 <div class="hero">
@@ -325,13 +380,17 @@
     </div>
 </div>
 <div class="main">
-    <div class="quote">
-        <p id="quote-p">
-            <span class="bold-block">"Straight from</span><br><i>the amazon rainforest</i><br><span class="bold-block">to you"</span>
-        </p>
-        <p id="quote-exp">
-            Boost your breakfast, enhance your pre-workout snack or treat yourself to a delicious desert with our powerful, great-tasting,  & ready-to-eat frozen Acai Berry. <i>Choose the right size tubs for you:</i>
-        </p>
+    <div class="quote row">
+        <div class="col-lg-3">
+            <p id="quote-p">
+                <span class="bold-block">"Straight from</span><br><i>the amazon rainforest</i><br><span class="bold-block">to you"</span>
+            </p>
+        </div>
+        <div class="col-lg-9">
+            <p id="quote-exp">
+                Boost your breakfast, enhance your pre-workout snack or treat yourself to a delicious desert with our powerful, great-tasting,  & ready-to-eat frozen Acai Berry. <i>Choose the right size tubs for you:</i>
+            </p>
+        </div>
     </div>
     <div class="carousel-container">
         <div class="carousel">
@@ -392,21 +451,58 @@
         </div>
     </div>
     <div class="c-white">
-        <div class="row">
+        <div class="row sup-txt">
             <div class="col-12">
                 <h2 class="superfood-title">Açaí Berry is more than just a Superfood!</h2>
             </div>
         </div>
-        <div class="row">
+        <div class="row sup-txt">
             <div class="col-12" id="sup-p">
                 <p>Acai berries are packed full of nutrients that have unmatched benefits for your overall health & wellbeing. One daily serving provides an excellent source for Vitamin A, Vitamin C  & Vitamin D</p>
             </div>
         </div>
         <div class="row">
-            <div class="sup-item">
-                <img src="/images/home/increasedenergy.svg" alt="Increased Energy Purple Heart">
-                <h4>INCREASED ENERGY</h4>
-                <p>Contains antioxidants, monounsaturated fats , iron, calcium, fiber, vitamin A, & anthocyanins keep you full and energized  throughout the day</p>
+            <div class="col-md-4">
+                <div class="sup-item">
+                    <img src="/images/home/increasedenergy.svg" alt="Increased Energy Purple Heart">
+                    <h4>INCREASED ENERGY</h4>
+                    <p>Contains antioxidants, monounsaturated fats , iron, calcium, fiber, vitamin A, & anthocyanins keep you full and energized  throughout the day</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="sup-item">
+                    <img src="/images/home/increasedenergy.svg" alt="Increased Energy Purple Heart">
+                    <h4>BRAIN FUNCTIONALITY</h4>
+                    <p>Brain that is aging slower can work faster & more efficiently. As a result, acai has been linked to improving cognitive functioning, alertness, &  the ability to think faster</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="sup-item">
+                    <img src="/images/home/increasedenergy.svg" alt="Increased Energy Purple Heart">
+                    <h4>AIDS WEIGHT LOSS</h4>
+                    <p>Many health experts have linked acai to weight loss and weight loss maintenance, and given its health properties, it is a good food to curb cravings</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="sup-item">
+                    <img src="/images/home/increasedenergy.svg" alt="Increased Energy Purple Heart">
+                    <h4>BETTER DIGESTION</h4>
+                    <p>Acai has long been in detox juices, and there is a good reaason why. Acai has a strong detoxifying capacity that is good to flush out the system & help make it clean & functional</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="sup-item">
+                    <img src="/images/home/increasedenergy.svg" alt="Increased Energy Purple Heart">
+                    <h4>INCREASED BLOOD FLOW</h4>
+                    <p>Acai has a low score on the glycemic index, which is good news for people with diabetes. It also has low lipid levels. An acai juice can be a healthy option to maintain steady glucose levels</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="sup-item">
+                    <img src="/images/home/increasedenergy.svg" alt="Increased Energy Purple Heart">
+                    <h4>GLUCOSE LEVELS</h4>
+                    <p>Acai berries are full of nutrients that helps your Blood circulation to warding off serious health ailments & establishing proper blood flow</p>
+                </div>
             </div>
         </div>
         <div class="mid-banner">
