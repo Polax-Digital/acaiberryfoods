@@ -3,7 +3,10 @@
 
     console.log($page.url.pathname)
 
-    
+    let revealMenu = false;
+    function menuClick() {
+        revealMenu = !revealMenu;
+    }
 
 </script>
 
@@ -87,11 +90,37 @@
     a:hover {
         text-decoration: underline;
     }
-    .mobile-menu {
+    button {
+        background: none;
+        border: none;
+    }
+    .mobile-nav {
         display: none;
+        background-color: #50253D;
+        margin: 0;
+        list-style-type: none;
+        margin-top: -1px;
+        padding-top: 2rem;
+        padding-right: 1rem;
+        text-align: right;
+    }
+    li {
+        margin: 1rem 0;
+    }
+    .revealMenu {
+        display: block;
+        animation: revealAnimation 1s forwards;
+    }
+    @keyframes revealAnimation {
+        0% {
+            height: 0;
+        }
+        100% {
+            height: 200px;
+        }
     }
     /* Media Queries */
-    @media (max-width: 430px) {
+    @media screen and (max-width: 430px) {
         #header-center {
             display: none;
         }
@@ -101,11 +130,11 @@
         #burger {
             display: block;
         }
-        .mobile-menu {
-            
+        a {
+            font-size: 15px !important;
         }
     }
-    @media (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         #logo {
             width: 100px;
         }
@@ -156,9 +185,9 @@
                     </a>
                 </div>
                 <div class="right">
-                    <a href="/">
+                    <button on:click={menuClick}>
                         <img src="/images/header/menu.svg" alt="Menu" id="burger">
-                    </a>
+                    </button>
                     <a href="/">
                         <img src="/images/header/account.svg" alt="Account" id="account">
                     </a>
@@ -167,7 +196,7 @@
         </div>
     </div>
 </header>
-<ul class="mobile-menu">
+<ul class="mobile-nav" class:revealMenu>
     <li>
         <a href="/shop">Shop</a>
     </li>
