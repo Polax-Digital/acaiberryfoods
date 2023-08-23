@@ -439,4 +439,3 @@
 </div>
 <Ingredients></Ingredients>
 <People></People>
-<Product></Product>
